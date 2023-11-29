@@ -6,6 +6,6 @@ version: "3.9"
 services:parallelsite:
     image: nginx:latest
     ports:
-      - "8081:80"
+      - "9080:80"
     volumes:
       - ./PhotoFolio:/usr/share/nginx/html
