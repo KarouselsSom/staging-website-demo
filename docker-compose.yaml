@@ -1,0 +1,19 @@
+#
+#   Runs multiple website on different ports
+#
+version: "3.9"
+
+services:
+  cafesite:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./cafe:/usr/share/nginx/html
+
+  photosite:
+    image: nginx:latest
+    ports:
+      - "8081:80"
+    volumes:
+      - ./PhotoFolio:/usr/share/nginx/html
