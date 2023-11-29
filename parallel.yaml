@@ -1,0 +1,11 @@
+#
+#   Runs multiple website on different ports
+#
+version: "3.9"
+
+services:parallelsite:
+    image: nginx:latest
+    ports:
+      - "8081:80"
+    volumes:
+      - ./PhotoFolio:/usr/share/nginx/html
