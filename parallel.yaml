@@ -7,6 +7,6 @@ services:
   parallelsite:
     image: nginx:latest
     ports:
-      - "9080:80"
+      - "8082:80"
     volumes:
-      - ./PhotoFolio:/usr/share/nginx/html
+      - ./parallelism:/usr/share/nginx/html

@@ -18,3 +18,9 @@ services:
     volumes:
       - ./PhotoFolio:/usr/share/nginx/html
 
+  parallelsite:
+    image: nginx:latest
+    ports:
+      - "8082:80"
+    volumes:
+      - ./parallelism:/usr/share/nginx/html
