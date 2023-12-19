@@ -1,1 +1,1 @@
-## Demo website for Islated Networks staging
+## Demo website for Isolated Networks staging
